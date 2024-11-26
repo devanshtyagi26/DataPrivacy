@@ -71,7 +71,7 @@ while flag:
     dec = "decrypt"
 
     # Check if the user wants to encrypt
-    if choice == enc or choice == enc.upper() or choice == enc.capitalize() or choice == "E" or choice == "e":
+    if choice in [enc, enc.upper(), enc.capitalize(), "E", "e"]:
         string = input("Enter the message to Encrypt: ")  # Input the message to encrypt
         key = int(input('Enter the key: '))  # Input the encryption key
 
@@ -79,7 +79,7 @@ while flag:
         print("The Encrypted message is:", output, "\n")
 
     # Check if the user wants to decrypt
-    elif choice == dec or choice == dec.upper() or choice == dec.capitalize() or choice == "D" or choice == "d":
+    elif choice in [dec, dec.upper(), dec.capitalize(), "D", "d"]:
         string = input("Enter the Cipher to Decrypt: ")  # Input the cipher text to decrypt
         key = int(input('Enter the key: '))  # Input the decryption key
 
